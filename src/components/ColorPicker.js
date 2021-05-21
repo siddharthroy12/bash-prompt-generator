@@ -6,7 +6,7 @@ export default function ColorPicker({ selectedElement, setColor, elements, showC
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
-		<button className="color-picker" onClick={() => setIsOpen(!isOpen)}>
+		<button className="color-picker" onClick={() => setIsOpen(!isOpen)} onBlur={() => setIsOpen(false)}>
 			<div
 				className="color-box" 
 				style={{
@@ -29,7 +29,7 @@ export default function ColorPicker({ selectedElement, setColor, elements, showC
 								<div
 									className="color-btn" 
 									style={{backgroundColor: colors[color].shade}}
-									onClick={() => setColor(color)}
+									onClick={() => selectedElement > -1 ? setColor(color) : null}
 								/>
 							)
 						})}

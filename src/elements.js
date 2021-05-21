@@ -164,27 +164,27 @@ let elements =  {
 
 let colors = {
 	'red': {
-		shade: '#E9653B',
+		shade: '#FF5555',
 		code: 31
 	},
 	'green': {
-		shade: '#39E9A8',
+		shade: '#50FA7B',
 		code: 32
 	},
 	'blue': {
-		shade: '#44AAE6',
+		shade: '#BD93F9',
 		code: 34
 	},
 	'yellow': {
-		shade: '#E5B684',
+		shade: '#F1FA8C',
 		code: 33
 	},
 	'cyan': {
-		shade: '#3DD5E7',
+		shade: '#8BE9FD',
 		code: 36
 	},
 	'pink': {
-		shade: '#E17599',
+		shade: '#FF79C6',
 		code: 35
 	},
 	'black': {
