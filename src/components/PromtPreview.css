@@ -1,0 +1,7 @@
+.promt-preview-box {
+	background-color: var(--secondary);
+	color: white;
+	font-family: monospace;
+	padding: 1rem;
+	font-size: 1.2rem;
+}

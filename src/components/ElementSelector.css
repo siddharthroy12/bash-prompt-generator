@@ -1,0 +1,47 @@
+.element-selector-box {
+	background-color: var(--secondary);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.element-nav {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-top: 1rem;
+	background-color: var(--primary);
+	color: white;
+}
+
+.element-nav li {
+	padding: 1rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+
+.element-nav .selected {
+	background-color: var(--secondary);
+	cursor: default;
+}
+
+.element-list {
+	padding: 1rem;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.element-list li {
+	background-color: white;
+	color: black;
+	padding: 0.5rem;
+	border-radius: 3px;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+.element-list li:hover .tooltip {
+	visibility: visible;
+}

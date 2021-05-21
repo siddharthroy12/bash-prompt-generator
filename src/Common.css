@@ -1,0 +1,29 @@
+.container {
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+.tooltip {
+	visibility: hidden;
+	max-width: 200px;
+	background-color: var(--light-grey);
+	color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	margin-left: -0.5rem;
+	margin-top: 1rem;
+	position: absolute;
+	z-index: 1;
+}
+
+.button {
+	font-size: 1rem;
+	padding: 0.5rem;
+	background-color: var(--accent);
+	border-radius: 3px;
+	border: none;
+}
+
+.danger {
+	background-color: var(--danger);
+}
