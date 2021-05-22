@@ -27,6 +27,7 @@ export default function ColorPicker({ selectedElement, setColor, elements, showC
 						{Object.keys(colors).map(color => {
 							return (
 								<div
+									title={color}
 									className="color-btn" 
 									style={{backgroundColor: colors[color].shade}}
 									onClick={() => selectedElement > -1 ? setColor(color) : null}

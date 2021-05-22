@@ -94,7 +94,7 @@ let elements =  {
 				{
 					name: 'Error Code',
 					hint: 'Return code of the previous command.',
-					code: '\\`nonzero_return\\',
+					code: '\\`nonzero_return\\\`',
 					addon: 'function nonzero_return() {\n\tRETVAL=$?\n\t[ $RETVAL -ne 0 ] && echo \"$RETVAL\"\n}',
 					preview: '1',
 					fg: 'white',
@@ -163,37 +163,41 @@ let elements =  {
 }
 
 let colors = {
+	'none': {
+		shade: '',
+		code: ''
+	},
 	'red': {
 		shade: '#FF5555',
-		code: 31
+		code: 1
 	},
 	'green': {
 		shade: '#50FA7B',
-		code: 32
+		code: 2
 	},
 	'blue': {
 		shade: '#BD93F9',
-		code: 34
+		code: 4
 	},
 	'yellow': {
 		shade: '#F1FA8C',
-		code: 33
+		code: 3
 	},
 	'cyan': {
 		shade: '#8BE9FD',
-		code: 36
+		code: 6
 	},
 	'pink': {
 		shade: '#FF79C6',
-		code: 35
+		code: 5
 	},
 	'black': {
 		shade: '#121212',
-		code: 30
+		code: 0
 	},
 	'white': {
 		shade: '#D9FBFF',
-		code: 37
+		code: 7
 	}
 }
 

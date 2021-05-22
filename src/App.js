@@ -3,6 +3,7 @@ import Header from './components/Header'
 import ElementSelector from './components/ElementSelector'
 import ElementSorter from './components/ElementSorter'
 import PromtPreview from './components/PromtPreview'
+import Output from './components/Output'
 import Footer from './components/Footer'
 
 import './App.css';
@@ -13,7 +14,7 @@ function App() {
   const [elements, setElements] = useState([])
   const [selectedElement, setSelectedElement] = useState(-1)
 
-  const [defaultFG, setDefaultFG] = useState('white')
+  const [defaultFG, setDefaultFG] = useState('none')
   const [defaultBG, setDefaultBG] = useState('black')
 
 
@@ -98,6 +99,7 @@ function App() {
           setDefaultBG={setDefaultBG}
           setDefaultFG={setDefaultFG}
         />
+        <Output elements={elements} />
         <Footer />
       </main>
     </div>

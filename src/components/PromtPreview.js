@@ -56,7 +56,7 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 				elements.map((element, index) => {
 					return (<span
 						style={{
-							color: colors[element.fg].shade,
+							color: element.fg === 'none' ? themeToggle ? colors['black'].shade : colors['white'].shade : colors[element.fg].shade,
 							backgroundColor: colors[element.bg].shade
 						}}
 						key={index}>{element.preview}
@@ -70,7 +70,7 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 			<div className="promt-preview-controls">
 				<span style={{ marginLeft: 'auto', marginRight: '1rem'}}>Toggle Theme</span>
 				<label className="switch">
-					<input type="checkbox" checked={themeToggle} onClick={onToggle} />
+					<input type="checkbox" checked={themeToggle} onChange={onToggle} />
 					<span className="slider round"></span>
 				</label>
 			</div>
