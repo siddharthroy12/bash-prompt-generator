@@ -13,13 +13,20 @@ function App() {
   const [elements, setElements] = useState([])
   const [selectedElement, setSelectedElement] = useState(-1)
 
+  const [defaultFG, setDefaultFG] = useState('white')
+  const [defaultBG, setDefaultBG] = useState('black')
+
+
   const resetElements = () => {
     setElements([])
     setSelectedElement(-1)
   }
 
   const addElement = (element) => {
-    setElements([...elements, element])
+    let elementTmp = element
+    elementTmp.bg = defaultBG
+    elementTmp.fg = defaultFG
+    setElements([...elements, elementTmp])
     setSelectedElement(elements.length)
   }
 
@@ -88,6 +95,8 @@ function App() {
         />
         <PromtPreview 
           elements={elements}
+          setDefaultBG={setDefaultBG}
+          setDefaultFG={setDefaultFG}
         />
         <Footer />
       </main>

@@ -5,3 +5,9 @@
 	padding: 1rem;
 	font-size: 1.2rem;
 }
+
+.promt-preview-controls {
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+}
