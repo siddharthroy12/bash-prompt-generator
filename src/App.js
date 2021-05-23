@@ -15,7 +15,7 @@ function App() {
   const [selectedElement, setSelectedElement] = useState(-1)
 
   const [defaultFG, setDefaultFG] = useState('none')
-  const [defaultBG, setDefaultBG] = useState('black')
+  const [defaultBG, setDefaultBG] = useState('none')
 
 
   const resetElements = () => {

@@ -1,0 +1,28 @@
+.custom-element-picker {
+	background-color: white;
+	border-radius: 3px;
+	padding: 0.2rem 0.5rem;
+	max-width: 10rem;
+}
+
+.custom-element-picker p {
+	margin: 0.2rem 0;
+}
+
+.custom-element-input-form {
+	margin-bottom: 0.4rem;
+	display: flex;
+}
+
+.custom-element-input-form input {
+	margin-right: 0.5rem;
+	width: 100%;
+}
+
+.custom-element-input-form button {
+	padding: 0.1rem 0.4rem;
+	border: none;
+	background-color: var(--accent);
+	border-radius: 3px;
+	font-size: 1rem;
+}

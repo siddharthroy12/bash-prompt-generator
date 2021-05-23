@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { elements } from '../elements'
+import CustomElementPicker from './CustomElementPicker'
 
 import './ElementSelector.css'
 
@@ -33,6 +34,9 @@ export default function ElementSelector({ addElement }) {
 								</li>
 							)
 						})
+					}
+					{
+						selectedTab === 'extra' && <CustomElementPicker addElement={addElement}/>
 					}
 				</ul>
 			</div>

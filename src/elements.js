@@ -116,47 +116,137 @@ let elements =  {
 			tabTitle: 'Date & Time Elements',
 			elements: [
 				{
-					name: 'Username',
-					hint: 'Current Username',
-					code: '\\u',
+					name: 'Date',
+					hint: 'The date in DDD MMM dd format',
+					code: '\\d',
 					addon: '',
 					preview: 'Thu May 20',
 					fg: 'white',
 					bg: 'black'
 				},
 				{
-					name: 'Hostname',
-					hint: 'Current Username',
+					name: '24hr Time',
+					hint: 'Time in 24 hour hh:mm format',
+					code: '\\A',
+					addon: '',
+					preview: '07:53',
 					fg: 'white',
 					bg: 'black'
 				},
 				{
-					name: 'Username',
-					hint: 'Current Username',
+					name: '12hr Time',
+					hint: 'Time in 24 hour hh:mm (AM/PM)format',
+					code: '\\@',
+					addon: '',
+					preview: '07:53 AM',
 					fg: 'white',
 					bg: 'black'
-				}
+				},
+				{
+					name: '24hr Time w/ Seconds',
+					hint: 'Time in 24 hour hh:mm:ss format',
+					code: '\\t',
+					addon: '',
+					preview: '07:53:10',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '12hr Time w/ Seconds',
+					hint: 'Time in 24 hour hh:mm:ss (AM/PM)format',
+					code: '\\T',
+					addon: '',
+					preview: '07:53:10 AM',
+					fg: 'white',
+					bg: 'black'
+				},
 			]
 		},
 
 		'extra' : {
-			tabTitle: 'Extra Elements',
+			tabTitle: 'Extra Characters',
 			elements: [
 				{
-					name: 'Username',
-					hint: 'Current Username',
-					code: '\\u'
+					name: '@',
+					hint: '@ symbol',
+					code: '@',
+					addon: '',
+					preview: '@',
+					fg: 'white',
+					bg: 'black'
 				},
 				{
-					name: 'Hostname',
-					hint: 'Current Username',
-					code: '\\u'
+					name: ':',
+					hint: ': symbol',
+					code: ':',
+					addon: '',
+					preview: ':',
+					fg: 'white',
+					bg: 'black'
 				},
 				{
-					name: 'Username',
-					hint: 'Current Username',
-					code: '\\u'
-				}
+					name: '[',
+					hint: '[ symbol',
+					code: '[',
+					addon: '',
+					preview: '[',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: ']',
+					hint: '] symbol',
+					code: ']',
+					addon: '',
+					preview: ']',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '-',
+					hint: '- symbol',
+					code: '-',
+					addon: '',
+					preview: '-',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '_',
+					hint: '_ symbol',
+					code: '_',
+					addon: '',
+					preview: '_',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '*',
+					hint: '* symbol',
+					code: '*',
+					addon: '',
+					preview: '*',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '␣',
+					hint: 'A space character',
+					code: ' ',
+					addon: '',
+					preview: ' ',
+					fg: 'white',
+					bg: 'black'
+				},
+				{
+					name: '↵',
+					hint: 'A newline character',
+					code: '\\n',
+					addon: '',
+					preview: '↵',
+					fg: 'white',
+					bg: 'black'
+				},
 			]
 		}
 	}
