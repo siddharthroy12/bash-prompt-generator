@@ -8,10 +8,8 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 
 	const onToggle = () => {
 		if (!themeToggle) {
-			setDefaultBG('white')
 			setDefaultFG('black')
 		} else {
-			setDefaultBG('black')
 			setDefaultFG('white')
 		}
 		
@@ -24,9 +22,6 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 					elements[i].fg = 'black'
 				}
 	
-				if (elements[i].bg === 'black') {
-					elements[i].bg = 'white'
-				}
 			}
 
 			// If Dark Theme
@@ -35,9 +30,6 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 					elements[i].fg = 'white'
 				}
 	
-				if (elements[i].bg === 'white') {
-					elements[i].bg = 'black'
-				}
 			}
 		}
 
