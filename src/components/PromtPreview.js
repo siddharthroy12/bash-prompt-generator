@@ -13,7 +13,6 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 			setDefaultFG('white')
 		}
 		
-
 		// Change the theme of elements
 		for (let i = 0; i < elements.length; i++) {
 			// If Light Theme

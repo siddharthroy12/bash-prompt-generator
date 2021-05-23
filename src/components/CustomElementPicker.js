@@ -5,7 +5,7 @@ export default function CustomElementPicker({ addElement }) {
 	const [customText, setCustomText] = useState('')
 
 	const createAndAddCustomElement = () => {
-		if (customText.lenght > 0) {
+		if (customText.length > 0) {
 			let customElement = {
 				name: customText,
 				hint: 'Custom Element',
@@ -15,7 +15,7 @@ export default function CustomElementPicker({ addElement }) {
 				fg: 'white',
 				bg: 'black'
 			}
-	
+			
 			addElement(customElement)
 		}
 	}
