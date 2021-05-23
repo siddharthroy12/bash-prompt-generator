@@ -45,13 +45,13 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 				}}>
 			{
 				elements.map((element, index) => {
-					return (<span
+					return element.name !== '↵' ? (<span
 						style={{
 							color: element.fg === 'none' ? themeToggle ? colors['black'].shade : colors['white'].shade : colors[element.fg].shade,
 							backgroundColor: colors[element.bg].shade
 						}}
 						key={index}>{element.preview}
-					</span>)
+					</span>) : <br />
 				})
 			}
 			{
