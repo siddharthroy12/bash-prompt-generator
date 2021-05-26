@@ -17,9 +17,15 @@ export default function Output({ elements }) {
 		let exportLine = 'export PS1="'
 
 		elements.forEach(element => {
-			exportLine += `\\[\\e[${element.bg !== 'none' ? '4' : ''}${colors[element.bg].code};${element.fg !== 'none' ? '3' : ''}${colors[element.fg].code}m\\]`
+			if (!(element.bg === 'none' && element.fg === 'none')) {
+				exportLine += `\\[\\e[${element.bg !== 'none' ? '4' : ''}${colors[element.bg].code}${element.fg !== 'none' && element.bg !== 'none' ? ';' : ''}${element.fg !== 'none' ? '3' : ''}${colors[element.fg].code}m\\]`
+			}
+			
 			exportLine += element.code
-			exportLine += '\\[\\e[m\\]'
+			if (!(element.bg === 'none' && element.fg === 'none')) {
+				exportLine += '\\[\\e[m\\]'
+			}
+			
 		})
 
 		exportLine += '"'

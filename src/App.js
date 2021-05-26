@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import ElementSelector from './components/ElementSelector'
 import ElementSorter from './components/ElementSorter'
-import PromtPreview from './components/PromtPreview'
+import PromptPreview from './components/PromptPreview'
 import Output from './components/Output'
 import Footer from './components/Footer'
 
@@ -94,7 +94,7 @@ function App() {
           setSelectedElementFG={setSelectedElementFG}
           setSelectedElementBG={setSelectedElementBG}
         />
-        <PromtPreview 
+        <PromptPreview 
           elements={elements}
           setDefaultBG={setDefaultBG}
           setDefaultFG={setDefaultFG}

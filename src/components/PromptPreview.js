@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { colors } from '../elements'
-import './PromtPreview.css'
+import './PromptPreview.css'
 
 export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 	
@@ -37,7 +37,7 @@ export default function PromtPreview({ elements, setDefaultBG, setDefaultFG }) {
 
 	return (
 		<div className="promt-preview container">
-			<h2>Promt Preview</h2>
+			<h2>Prompt Preview</h2>
 			<div className="promt-preview-box"
 				style={{
 					border: themeToggle ? '2px solid black' : null,
