@@ -1,3 +1,3 @@
-# Bash Promt Generator
+# Bash Prompt Generator
 
 This project is inspired by ezpromt.net
